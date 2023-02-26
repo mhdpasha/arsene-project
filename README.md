@@ -1,5 +1,5 @@
 # Arsene Project
-Awesome webiste that built on Vanilla.
+Awesome website that built on Vanilla.
 
 ## About
 Arsene Project were created to provide content including website layouts and animations, publicly open
