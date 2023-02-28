@@ -448,12 +448,12 @@ button {
   display: flex;
 }
 
-.faq-flex {
+.faq-flex, .faq-flex2 {
   margin-bottom: 30px;
   width: 50%;
 }
 
-.faq-flex .accordion {
+.faq-flex .accordion, .faq-flex2 .accordion {
   overflow: hidden;
   font-weight: 500;
   margin: 0px 15px;

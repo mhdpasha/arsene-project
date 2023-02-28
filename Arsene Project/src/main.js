@@ -55,7 +55,8 @@ hljs.initHighlightingOnLoad();
         textAnimation.seek((scrollPage() / 30) * textAnimation.duration);
         lineAnimation.seek((scrollPage() / 62) * lineAnimation.duration);
         staggerCard.seek((scrollPage() / 35) * staggerCard.duration);
-        accorWrap.seek((scrollPage() / 65) * accorWrap.duration);
+        accorWrap1.seek((scrollPage() / 65) * accorWrap1.duration);
+        accorWrap2.seek((scrollPage() / 65) * accorWrap2.duration);
         gitContent.seek((scrollPage() / 130) * gitContent.duration);
     };
 
@@ -126,8 +127,15 @@ hljs.initHighlightingOnLoad();
         opacity: [0,1],
         delay: anime.stagger(100)
     });
-    const accorWrap = anime({
-        targets: '.accorWrap .faq-flex',
+    const accorWrap1 = anime({
+        targets: '.faq-flex .accordion',
+        translateY: [180, 0],
+        easing: 'easeInCubic',
+        opacity: [0,1],
+        delay: anime.stagger(100)
+    })
+    const accorWrap2 = anime({
+        targets: '.faq-flex2 .accordion',
         translateY: [180, 0],
         easing: 'easeInCubic',
         opacity: [0,1],
