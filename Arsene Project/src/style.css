@@ -1,0 +1,1000 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+:root {
+  --text: #ffffff;
+  --background: #141725;
+  --primary: #1445b7;
+  --active: #3067e7;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1445b7;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #41baff;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #fff;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track {
+  background-color: #282a36;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+body {
+  height: 100%;
+  background: #141725;
+  transition: 0.2s ease-in-out;
+  margin: auto;
+}
+
+pre {
+  font-size: 14px;
+}
+
+code {
+  border-radius: 10px;
+  border-left: 10px solid #1445b7;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+
+/* HEADER STYLING START */
+/* Navbar margin set */
+header {
+  align-content: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px 5%;
+  max-width: 1530px;
+}
+
+li,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo {
+  cursor: default;
+  margin-right: auto;
+  width: 100px;
+}
+
+.navList {
+  list-style: none;
+  margin-right: 150px;
+  transition: 0.3s ease;
+}
+
+.navList li {
+  display: inline-block;
+  padding: 0px 30px;
+  transition: opacity 0.5 ease;
+}
+
+.navList li a {
+  letter-spacing: 3.5px;
+  transition: 0.2s ease;
+}
+
+.navList li a:hover {
+  color: var(--active);
+}
+
+.gitButton {
+  display: flex;
+  padding: 10px 25px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.gitButton:hover {
+  background-color: var(--active);
+}
+
+.gitButtonText {
+  padding-right: 10px;
+}
+/* HEADER STYLING END */
+
+/* CONTENT STYLING START */
+/* Content margin set */
+.content {
+  margin: auto;
+  padding: 60px 15%;
+  max-width: 1080px;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/* SECTION BERANDA */
+.beranda {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: content;
+  margin-bottom: 20%;
+}
+
+.beranda-text {
+  padding-right: 0px;
+}
+
+.beranda h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+
+.beranda h3 {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0px 5px;
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.beranda p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: white;
+  margin-top: 50px;
+}
+
+.beranda button {
+  background-color: var(--primary);
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 100px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.beranda button:hover {
+  background-color: var(--active);
+}
+
+.beranda .svg {
+  display: flex;
+  margin-right: 7%;
+}
+
+.beranda .svg .svg-left {
+  margin-top: 0px;
+}
+
+.beranda .svg .svg-right {
+  margin: 75px 0px 0px 25px;
+}
+
+.beranda .blur {
+  position: absolute;
+  background-color: var(--active);
+  width: 350px;
+  height: 370px;
+  border-radius: 50%;
+  z-index: -10;
+  filter: blur(100px);
+  opacity: 0.5;
+}
+
+
+
+/* SECTION ABOUT */
+.about {
+  margin-bottom: 20%;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: content;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.about-text {
+  margin-top: 28px;
+  padding-left: 50px;
+}
+
+.about h3 {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0px 5px;
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.code-h2 {
+  letter-spacing: 0.3px;
+}
+
+.title-h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  background-color: var(--primary);
+  border-radius: 0 20px ;
+  padding: 7px 35px;
+}
+
+.about h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.about h1 {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#img-code {
+  height: auto;
+}
+
+
+
+/* SECTION TECH */
+.tech {
+  margin-bottom: 20%;
+  color: var(--text);
+}
+
+.tech h1 {
+  font-weight: 600;
+}
+
+.tech h2 {
+  font-weight: 600;
+  margin: 0;
+}
+.tech h3 {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0px 5px;
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech .tech-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech .tech-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tech .tech-line {
+  display: inline-block;
+  width: 73%;
+  border-top: 0.2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.tech .tech-sub {
+  font-weight: 300;
+  margin-right: 0;
+}
+
+.tech .ct-card {
+  width: auto;
+  display: flex;
+  margin: 5% 2% 10%;
+}
+
+.tech .ct-card .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 0px 5px;
+  height: 200px;
+  background-color: var(--primary);
+  flex: 1;
+  transition: 0.5s all ease;
+}
+
+.tech .ct-card .card:hover {
+  flex: 2;
+  background-color: var(--active);
+}
+
+.tech .tech-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech .vanilla {
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* SECTION FAQ */
+.faq {
+  margin-bottom: 25%;
+}
+
+.faq h1 {
+  color: var(--text);
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq h4 {
+  font-weight: 700;
+  font-size: 20px;
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.question-wrapper {
+  display: flex;
+}
+
+.faq-flex, .faq-flex2 {
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.faq-flex .accordion, .faq-flex2 .accordion {
+  overflow: hidden;
+  font-weight: 500;
+  margin: 0px 15px;
+  margin-bottom: 20px;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion label {
+  position: relative;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  border-bottom: 1px solid transparent;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.accordion label:hover {
+  background: var(--active);
+}
+
+.accordion label:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/ArrowDown.svg) no-repeat 0 0;
+  transition: all 1s ease;
+}
+
+.accordion input:checked + label {
+  background: #fff;
+  color: #0f111c;
+  border-color: #0f111c;
+}
+
+.accordion input:checked + label:hover {
+  background: var(--active);
+  color: var(--text);
+}
+
+.accordion input:checked + label:after {
+  filter: blur(90px);
+}
+
+.accordion-body {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  /* border-top: #fff 1px solid; */
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.accordion input:checked ~ .accordion-body {
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: #fff;
+  opacity: 1;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.accordion input:checked ~ label {
+  transition: all 0.3s ease;
+  border-radius: 10px 10px 0 0;
+}
+
+.accordion-body p {
+  padding: 0 15px 0 15px;
+  color: #0f111c;
+  font-weight: 400;
+}
+
+
+/*SECTION GIT*/
+.git {
+  margin-bottom: 20%;
+}
+
+.git-flex {
+  color: var(--text);
+  display: flex;
+  flex-direction: row;
+  flex-basis: content;
+  justify-content: space-between;
+}
+
+.git h1 {
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+.git h3 {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.git svg {
+  margin: 0;
+}
+
+.git button {
+  background-color: var(--primary);
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 75px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.git button:hover {
+  background-color: var(--active);
+}
+
+.git .auto-type2 {
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.git .gitBlur {
+  position: absolute;
+  background-color: var(--active);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  z-index: -10;
+  filter: blur(130px);
+  opacity: 0.5;
+  margin-left: 650px;
+}
+
+
+
+/* SECTION FEEDBACK */
+.feedback {
+  color: var(--text);
+  margin-bottom: 10%;
+}
+
+.feedback h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.feedback h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.feedback-flex {
+  display: flex;
+  flex-direction: row;
+  flex-basis: content;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.feedback button {
+  font-weight: 600;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 7px 10px;
+  margin-right: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.feedback button:hover {
+  background:var(--active);
+  border: var(--active);
+  border-radius: 10px;
+  padding: 7px 20px;
+}
+
+.feedback #buttonFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.feedback #pathPointer {
+  position: absolute;
+  z-index: 1;
+  border: 0px solid white;
+  margin: 0;
+}
+
+.feedback #logoLine {
+  position: absolute;
+  margin-top: 40px;
+  z-index: -1;
+}
+
+
+
+/* Footer */
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+}
+.footer-flex div {
+  margin: 0px 150px;
+  padding-bottom: 80px;
+}
+
+footer {
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: 20%;
+  background-color: #0f111c;
+  color: var(--text);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .contact,
+.creator {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.contact h3,
+.creator h3 {
+  margin-bottom: 30px;
+}
+
+footer a {
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: var(--active);
+}
+
+footer img {
+  height: auto;
+  margin: auto;
+  margin-top: 23px;
+  cursor: default;
+}
+
+footer .slogan h3 {
+  text-align: right;
+  background: -webkit-linear-gradient(#41baff, #1951c2);
+  background-clip: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  body {
+    background-color: #0f111c;
+  }
+
+  header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 10px;
+    background-color: var(--background);
+    transition: all 0.2s ease;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    justify-content: center;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 2px;
+    background: var(--text);
+    margin: 6px 18px;
+  }
+
+  .navList {
+    max-height: 0px;
+    position: absolute;
+    top: 43.5px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: var(--background);
+  }
+
+  .navList li {
+    display: block;
+    visibility: hidden;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin: 60px 0;
+    margin-right: 17vw;
+    transition: opacity 0.5;
+    opacity: 0;
+  }
+
+  .navList.active {
+    max-height: 360px;
+  }
+
+  .navList.active li {
+    visibility: visible;
+    animation: visible 0.5s forwards;
+  }
+
+  @keyframes visible {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .navList li a {
+    padding: 20px;
+  }
+
+  .gitButtonText {
+    display: none;
+  }
+
+  .gitButton {
+    border-radius: 10px;
+    padding: 7px 12px;
+    margin-right: 55px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .gitLogo {
+    height: auto;
+    width: 25px;
+  }
+
+  /* Content Styling */
+  .content {
+    padding: 100px 0;
+  }
+
+
+  /* Section beranda Resp*/
+  .beranda {
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .beranda h1 {
+    font-size: 36px;
+  }
+  .beranda h3 {
+    font-size: 16px;
+  }
+  .beranda p {
+    font-size: 14px;
+  }
+
+  .beranda .svg {
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }
+
+  .beranda .blur {
+    width: 250px;
+    height: 40vh;
+  }
+
+  #svg-left,
+  #svg-right {
+    width: 100px;
+  }
+
+
+  /* Section about Resp*/
+  .about-flex {
+    flex-direction: column;
+  }
+
+  .about-title h1 {
+    letter-spacing: 0px;
+    font-size: 36px;
+  }
+
+  .about .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  code {
+    margin: auto;
+    border-left: 5px solid #1445b7;
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .about div h2 {
+    text-align: left;
+  }
+
+  .code-h2 {
+    padding: 0 20%;
+  }
+
+
+
+  /* Section tech Resp*/
+  .tech-wrap {
+    display: none;
+  }
+
+  .tech .ct-card {
+    flex-direction: column;
+    margin: 10%;
+  }
+
+  .tech .ct-card .card {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .tech .tech-end {
+    font-size: 10px;
+  }
+
+
+
+  /* Section faq resp */
+  .question-wrapper {
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+  }
+
+  .faq-flex, .faq-flex2 {
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  .faq-flex {
+    margin-bottom: 50px;
+  }
+
+  #accorTitle {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+
+    /* Section git resp */
+  .git-flex {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gitContent {
+    width: 330px;
+  }
+
+  .gitContentText {
+    text-align: center;
+  }
+
+  .gitContentText h1 {
+    font-size: 24px;
+  }
+
+  .gitContentText button {
+    font-size: 16px;
+  }
+
+  .gitContentText h3 {
+    font-size: 12px;
+  }
+
+
+  /* Section Feedback Resp */
+  .feedback-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-text {
+    margin-top: 50px ;
+    margin-bottom: 100px;
+    font-size: 24px;
+  }
+
+  .feedback-text h3 {
+    font-size: 16px;
+    padding: 0 5%;
+  }
+
+  .feedback #buttonFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feedback #logoLine {
+    display: none;
+  }
+
+  .feedback .feedback-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feedback #discordWidget {
+    width: 300px;
+  }
+
+
+/* Section footer resp */
+  footer {
+    background-color: #0a0b13;
+  }
+
+  footer .slogan h3 {
+    text-align: left;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-flex div {
+    text-align: left;
+    margin: 0 0;
+    padding-bottom: 25px;
+    padding-right: 40vw;
+  }
+}
+
+
+/* Footer Spacing */
+@media screen and (max-width: 1360px) {
+  .footer-flex div {
+    margin: 0px 110px;
+  }
+}
