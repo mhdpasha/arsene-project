@@ -5,10 +5,10 @@ Awesome website that built on Vanilla.
 Arsene Project were created to provide content including website layouts and animations, publicly open
 for everyone to learn what's inside. Framework-free (HTML/CSS/JS).
 
-##Libraries
-In this project, we use :
-• Anime.JS (https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js)
-• Typed.JS (https://cdn.jsdelivr.net/npm/typed.js@2.0.12)
+## Libraries
+In this project, we use : <br>
+• Anime.JS (https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js)<br>
+• Typed.JS (https://cdn.jsdelivr.net/npm/typed.js@2.0.12)<br>
 • Highlight.JS (https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js)
 
 ## Creator
