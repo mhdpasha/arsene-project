@@ -2,7 +2,7 @@
 Awesome website that built on Vanilla.
 
 ## About
-Arsene Project were created to provide content including website layouts and animations, publicly open
+Arsene Project was created to provide content including website layouts and animations, publicly open
 for everyone to learn what's inside. Framework-free (HTML/CSS/JS).
 
 ## Libraries
