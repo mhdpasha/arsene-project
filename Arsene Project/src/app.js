@@ -1,63 +1,55 @@
-hljs.initHighlightingOnLoad();
+hljs.initHighlightingOnLoad()
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault()
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth',
             block: 'center'
-            });
-        });
-    });
+            })
+        })
+    })
 
-    let hamburger = document.querySelector(".hamburger");
-    hamburger.onclick = function() {
-        nav = document.querySelector(".navList");
+    const hamburger = document.querySelector(".hamburger")
+    const nav = document.querySelector(".navList")
+    hamburger.onclick = () => {
         nav.classList.toggle("active")
     }
 
-    let html = document.getElementById("card-html");
-    html.onmouseover = function() {
-        document.getElementById("text-html").innerHTML = "HTML 5"
-    }
-    html.onmouseleave = function() {
-        document.getElementById("text-html").innerHTML = "HTML"
-    }
+    const html = document.getElementById("card-html")
+    const htmlText = document.getElementById("text-html")
+    html.onmouseover = () => htmlText.innerHTML = "HTML 5"
+    html.onmouseleave = () => htmlText.innerHTML = "HTML"
 
-    let css = document.getElementById("card-css");
-    css.onmouseover = function() {
-        document.getElementById("text-css").innerHTML = "Vanilla CSS"
-    }
-    css.onmouseleave = function() {
-        document.getElementById("text-css").innerHTML = "CSS"
-    }
+    const css = document.getElementById("card-css")
+    const cssText = document.getElementById("text-css")
+    css.onmouseover = () => cssText.innerHTML = "Vanilla CSS"
+    css.onmouseleave = () => cssText.innerHTML = "CSS"
 
-    let js = document.getElementById("card-js");
-    js.onmouseover = function() {
-        document.getElementById("text-js").innerHTML = "JS Libraries"
-    }
-    js.onmouseleave = function() {
-        document.getElementById("text-js").innerHTML = "JavaScript"
-    }
+    const js = document.getElementById("card-js")
+    const jsText = document.getElementById("text-js")
+    js.onmouseover = () => jsText.innerHTML = "JS Libraries"
+    js.onmouseleave = () => jsText.innerHTML = "JavaScript"
 
 
     const scrollPage = () => {
-        const bodyST = document.body.scrollTop;
-        const docST = document.documentElement.scrollTop;
-        const docSH = document.documentElement.scrollHeight;
-        const docCH = document.documentElement.clientHeight;
+        const bodyST = document.body.scrollTop
+        const docST = document.documentElement.scrollTop
+        const docSH = document.documentElement.scrollHeight
+        const docCH = document.documentElement.clientHeight
     
       return (docST + bodyST) / (docSH - docCH) * 100
     }
     window.onscroll = () => {
-        codeAnimation.seek((scrollPage() / 25) * codeAnimation.duration);
-        textAnimation.seek((scrollPage() / 25) * textAnimation.duration);
-        lineAnimation.seek((scrollPage() / 53) * lineAnimation.duration);
-        staggerCard.seek((scrollPage() / 30) * staggerCard.duration);
-        accorWrap1.seek((scrollPage() / 57) * accorWrap1.duration); accorWrap2.seek((scrollPage() / 57) * accorWrap2.duration);
-        gitContent.seek((scrollPage() / 110) * gitContent.duration);
-        lineAnimation2.seek((scrollPage() / 125) * lineAnimation2.duration);
+        codeAnimation.seek((scrollPage() / 25) * codeAnimation.duration)
+        textAnimation.seek((scrollPage() / 25) * textAnimation.duration)
+        lineAnimation.seek((scrollPage() / 53) * lineAnimation.duration)
+        staggerCard.seek((scrollPage() / 30) * staggerCard.duration)
+        accorWrap1.seek((scrollPage() / 57) * accorWrap1.duration)
+        accorWrap2.seek((scrollPage() / 57) * accorWrap2.duration)
+        gitContent.seek((scrollPage() / 110) * gitContent.duration)
+        lineAnimation2.seek((scrollPage() / 125) * lineAnimation2.duration)
     };
 
     let typed = new Typed(".auto-type", {
@@ -85,7 +77,7 @@ hljs.initHighlightingOnLoad();
         easing: 'easeInOutElastic',
         delay: 600,
         loop: true
-    });
+    })
     const svgRight = anime({
         targets: '#svg-right',
         translateX: [0, -180, 0],
@@ -94,7 +86,7 @@ hljs.initHighlightingOnLoad();
         easing: 'easeInOutElastic',
         delay: 600,
         loop: true
-    });
+    })
     const codeAnimation = anime({
         targets: 'code',
         scale: 1,
@@ -103,7 +95,7 @@ hljs.initHighlightingOnLoad();
         easing: 'easeInOutQuart',
         autoplay: false,
         opacity: [0,3]
-    });
+    })
     const textAnimation = anime({
         targets: '.code-h2',
         scale: 1,
@@ -112,21 +104,21 @@ hljs.initHighlightingOnLoad();
         easing: 'easeInOutQuart',
         autoplay: false,
         opacity: [0,3]
-    });
+    })
     const lineAnimation = anime({
         targets: '.tech-line',
         width: ['0%','73%'],
         easing: 'easeInOutQuart',
         direction: 'alternate',
         autoplay: false,
-    });
+    })
     const staggerCard = anime({
         targets: '.ct-card .card',
         translateY: [180, 0],
         easing: 'easeInCubic',
         opacity: [0,1],
         delay: anime.stagger(100)
-    });
+    })
     const accorWrap1 = anime({
         targets: '.faq-flex .accordion',
         translateY: [180, 0],
@@ -147,22 +139,24 @@ hljs.initHighlightingOnLoad();
         easing: 'easeInOutQuart',
         autoplay: false,
     })
-    let path = anime.path('#logoLine path');
-    let pathAnimation = anime({
-        targets: '#pathPointer',
-        translateX: path('x'),
-        translateY: path('y'),
-        // rotate: path('angle'),
-        easing: 'linear',
-        duration: 8000,
-        loop: true,
-        autoplay: true
-    })
-    let lineAnimation2 = anime({
+    const lineAnimation2 = anime({
         targets: '#logoLine',
-        translateX: [400, 0],
+        translateX: [600, 0],
         skew: [100, 0],
         easing: 'easeInOutQuint',
         autoplay: false,
         loop: false,
     })
+
+    // let path = anime.path('#logoLine path');
+    // let pathAnimation = anime({
+    //     targets: '#pathPointer',
+    //     translateX: path('x'),
+    //     translateY: path('y'),
+    //     // rotate: path('angle'),
+    //     easing: 'linear',
+    //     duration: 8000,
+    //     loop: true,
+    //     autoplay: true
+    // })
+    
