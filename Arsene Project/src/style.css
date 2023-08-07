@@ -72,10 +72,11 @@ code {
 /* HEADER STYLING START */
 /* Navbar margin set */
 header {
-  align-content: center;
   display: flex;
+  align-content: center;
   justify-content: flex-end;
   align-items: center;
+  user-select: none;
   padding: 25px 5%;
   max-width: 1530px;
 }
