@@ -100,12 +100,13 @@ button {
   list-style: none;
   margin-right: 150px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .navList li {
   display: inline-block;
   padding: 0px 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.5s ease;
 }
 
