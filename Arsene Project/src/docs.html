@@ -60,10 +60,10 @@
                     </p>
                 </left-side>
                 <right-side>
-                    <badge-container>
-                        <img src="../img/HeroLabel1.png" alt="" id="img1">
-                        <img src="../img/HeroLabel2.png" alt="" id="img2">
-                        <img src="../img/HeroLabel3.png" alt="" id="img3">
+                    <badge-container class="badge">
+                        <img src="../img/HeroLabel1.png" alt="HeroLabel" class="labelStagger" id="img1">
+                        <img src="../img/HeroLabel2.png" alt="HeroLabel" class="labelStagger" id="img2">
+                        <img src="../img/HeroLabel3.png" alt="HeroLabel" class="labelStagger" id="img3">
                     </badge-container>
                     <img src="../img/DocsHeroIMG.png" alt="heroIMG" id="heroIMG">
                 </right-side>
@@ -75,15 +75,35 @@
             </div>
             <section class="docs">
                 <left-content>
+                    <div style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px 0;
+                    background-color: #282933;
+                    margin-bottom: 30px;
+                    ">
+                        <img src="../img/Logotext Arsene.png" alt="logotext" height="auto" width="100px">
+                    </div>
                     <ul>
                         <li style="opacity: 1;" id="btn-1">Animation</li>
-                        <li style="opacity: 0.3;" id="btn-2">Colour</li>
                         <li style="opacity: 0.3;" id="btn-3">Libraries</li>
-                        <li style="opacity: 0.3;" id="btn-4">Typography</li>
-                        <li style="opacity: 0.3;" id="btn-4">Tools</li>
+                        <li style="opacity: 0.3;" id="btn-2">Miscellaneous</li>
                     </ul>
                 </left-content>
                 <right-content>
+                    <browser-ui style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 22px 0;
+                    padding-left: 30px;
+                    background-color: #282933;
+                    position: sticky;
+                    top: 0;
+                    ">
+                        <!-- <img src="../img/Logotext Arsene.png" alt="logotext" height="auto" width="100px"> -->
+                    </browser-ui>
                     <div id="content-1">
                         <h2>Animation</h2>
                     </div>
@@ -91,14 +111,7 @@
                         <h2>Colour</h2>
                     </div>
                     <div id="content-3">
-                        <h2>Libraries</h2>
-                    </div>
-                    <div id="content-4">
-                        <h2>Typography</h2>
-                    </div>
-                    <div id="content-5">
-                        <h2>Tools</h2>
-                    </div>
+                        <h2>Miscellaneous</h2>
                 </right-content>
             </section>
             <section class="docs-com">
@@ -143,6 +156,18 @@
         </footer>
     </body>
 <script>
+
+const labelAnimation = anime({
+    targets: '.badge .labelStagger',
+    translateY: [0, 20, 0],
+    easing: 'easeInOutCubic',
+    autoplay: true,
+    loop: true,
+    duration: 1500,
+    delay: anime.stagger(100)
+})
+
+
 // const btnMail = document.getElementById("buttonMail")
 
 // const btnAnimate = anime({
