@@ -52,7 +52,7 @@
                 <div class="blur"></div>
                     <h1>
                         Let's build <br>
-                        <span>Modern</span> web.
+                        <span id="modernText">Modern</span> web.
                     </h1>
                     <p>
                         Integrate complete component-based UI, <br>
@@ -86,9 +86,9 @@
                         <img src="../img/Logotext Arsene.png" alt="logotext" height="auto" width="100px">
                     </div>
                     <ul>
-                        <li style="opacity: 1;" id="btn-1">Animation</li>
-                        <li style="opacity: 0.3;" id="btn-3">Libraries</li>
-                        <li style="opacity: 0.3;" id="btn-2">Miscellaneous</li>
+                        <li style="opacity: 1;" id="nav-anim">Animation</li>
+                        <li style="opacity: 0.3;" id="nav-lib">Libraries</li>
+                        <li style="opacity: 0.3;" id="nav-misc">Miscellaneous</li>
                     </ul>
                 </left-content>
                 <right-content>
@@ -106,12 +106,15 @@
                     </browser-ui>
                     <div id="content-1">
                         <h2>Animation</h2>
+                        <p>Ini contoh konten animation</p>
                     </div>
-                    <div id="content-2">
-                        <h2>Colour</h2>
+                    <div id="content-2" style="display: none;">
+                        <h2>Libraries</h2>
+                        <p>nah kalo ini libraries</p>
                     </div>
-                    <div id="content-3">
+                    <div id="content-3" style="display: none;">
                         <h2>Miscellaneous</h2>
+                        <p>yang ini misc</p>
                 </right-content>
             </section>
             <section class="docs-com">
@@ -157,14 +160,64 @@
     </body>
 <script>
 
+// nav buttons
+const navAnim = document.getElementById('nav-anim')
+const navLib = document.getElementById('nav-lib')
+const navMisc = document.getElementById('nav-misc')
+
+// div content
+const contentAnim = document.getElementById('content-1')
+const contentLib = document.getElementById('content-2')
+const contentMisc = document.getElementById('content-3')
+
+// event handlers
+navAnim.onclick = () => {
+    navAnim.style.opacity = 1
+    navLib.style.opacity = 0.3
+    navMisc.style.opacity = 0.3
+
+    contentAnim.style.display = 'block'
+    contentLib.style.display = 'none'
+    contentMisc.style.display = 'none'
+}
+navLib.onclick = () => {
+    navAnim.style.opacity = 0.3
+    navLib.style.opacity = 1
+    navMisc.style.opacity = 0.3
+
+    contentAnim.style.display = 'none'
+    contentLib.style.display = 'block'
+    contentMisc.style.display = 'none'
+}
+navMisc.onclick = () => {
+    navAnim.style.opacity = 0.3
+    navLib.style.opacity = 0.3
+    navMisc.style.opacity = 1
+
+    contentAnim.style.display = 'none'
+    contentLib.style.display = 'none'
+    contentMisc.style.display = 'block'
+}
+
+
 const labelAnimation = anime({
     targets: '.badge .labelStagger',
     translateY: [0, 20, 0],
     easing: 'easeInOutCubic',
     autoplay: true,
     loop: true,
-    duration: 1500,
+    duration: 2000,
     delay: anime.stagger(100)
+})
+
+const modernTextAnimation = anime({
+    targets: '#modernText',
+    opacity: [0.5,1,0],
+    easing: 'easeInOutCirc',
+    autoplay: true,
+    loop: true,
+    duration: 200,
+    delay: [1000,10000]
 })
 
 

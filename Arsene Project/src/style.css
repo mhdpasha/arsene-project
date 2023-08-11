@@ -861,6 +861,11 @@ footer h5 {
 .docs left-content ul li {
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#nav-anim:hover, #nav-lib:hover, #nav-misc:hover {
+  color: var(--active);
 }
 
 .docs right-content {
@@ -1231,7 +1236,7 @@ footer h5 {
     padding-right: 40vw;
   }
 
-  
+
 
 }
 
