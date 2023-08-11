@@ -106,7 +106,6 @@ button {
 .navList li {
   display: inline-block;
   padding: 0px 0px;
-  /* cursor: pointer; */
   transition: 0.5s ease;
 }
 
@@ -292,7 +291,6 @@ button {
 
 .about h1 {
   color: white;
-  letter-spacing: 3px;
   font-size: 36px;
   font-weight: 600;
   margin: 0;
@@ -740,7 +738,7 @@ footer h5 {
   justify-content: center;
   align-items: center;
   gap: 200px;
-  margin-bottom: 20%;
+  margin-bottom: 25%;
   position: relative;
 }
 
@@ -762,7 +760,7 @@ footer h5 {
   -webkit-text-fill-color: transparent;
 }
 
-.docs-landing img {
+.docs-landing #heroIMG {
   aspect-ratio: 347/384;
   width: 250px;
 }
@@ -776,6 +774,35 @@ footer h5 {
   z-index: -10;
   filter: blur(100px);
   opacity: 0.2;
+}
+
+.docs-landing badge-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  left: 570px;
+  width: 100%;
+}
+
+.docs-landing badge-container img {
+  height: auto;
+}
+
+.docs-landing badge-container #img1 {
+  width: 170px;
+}
+
+.docs-landing badge-container #img2 {
+  width: 130px;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+
+.docs-landing badge-container #img3 {
+  width: 130px;
+  margin-top: 35px;
+  margin-left: 320px;
 }
 
 
@@ -795,7 +822,7 @@ footer h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   font-weight: 700;
   font-size: 16px;
   padding: 0px 5px;
@@ -803,6 +830,20 @@ footer h5 {
   background-clip: var(--text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.docs-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.docs-caption p {
+  width: 500px;
 }
 
 .docs left-content {

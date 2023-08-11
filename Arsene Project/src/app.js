@@ -65,7 +65,7 @@ hljs.highlightAll() // initHighlightingOnLoad()
     window.onscroll = () => {
         codeAnimation.seek((scrollPage() / 25) * codeAnimation.duration)
         textAnimation.seek((scrollPage() / 25) * textAnimation.duration)
-        lineAnimation.seek((scrollPage() / 53) * lineAnimation.duration)
+        lineAnimation.seek((scrollPage() / 50) * lineAnimation.duration)
         staggerCard.seek((scrollPage() / 30) * staggerCard.duration)
         accorWrap1.seek((scrollPage() / 57) * accorWrap1.duration)
         accorWrap2.seek((scrollPage() / 57) * accorWrap2.duration)
