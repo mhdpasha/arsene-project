@@ -31,6 +31,27 @@ hljs.highlightAll() // initHighlightingOnLoad()
     const jsText = document.getElementById("text-js")
     js.onmouseover = () => jsText.innerHTML = "JS Libraries"
     js.onmouseleave = () => jsText.innerHTML = "JavaScript"
+    
+
+
+    // docs
+    // let btn1 = document.getElementById("btn-1")
+    // let btn2 = document.getElementById("btn-2")
+    // let btn3 = document.getElementById("btn-3")
+
+
+    // let content1 = document.getElementById("content-1")
+    // let content2 = document.getElementById("content-2")
+
+    // btn1.addEventListener("click", () => {
+    //     content1.style.display = 'block'
+    //     content2.style.display = 'none'
+    // })
+    // btn2.addEventListener("click", () => {
+    //     content1.style.display = 'none'
+    //     content2.style.display = 'block'
+    // })
+    
 
 
     const scrollPage = () => {
@@ -51,6 +72,7 @@ hljs.highlightAll() // initHighlightingOnLoad()
         gitContent.seek((scrollPage() / 110) * gitContent.duration)
         lineAnimation2.seek((scrollPage() / 125) * lineAnimation2.duration)
     };
+
 
     let typed = new Typed(".auto-type", {
         strings: ["Prototyping", "Coding", "Debugging"],
