@@ -876,7 +876,7 @@ footer h5 {
 }
 
 .docs left-content ul {
-  margin-right: 40px;
+  margin-right: 50px;
   list-style: none;
 }
 
@@ -888,6 +888,17 @@ footer h5 {
 
 #nav-anim:hover, #nav-lib:hover, #nav-misc:hover {
   color: var(--active);
+}
+
+#nav-lib, #nav-anim, #nav-misc{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#nav-lib span, #nav-anim span, #nav-misc span{
+  opacity: 0.5;
+  padding: 5px 5px 0px 0px;
 }
 
 .docs right-content {
