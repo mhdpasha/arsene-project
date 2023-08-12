@@ -4,6 +4,8 @@
   --background: #141725;
   --primary: #1445b7;
   --active: #3067e7;
+  --brown: #CD9A69;
+  --green: #99C26E;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -812,11 +814,25 @@ footer h5 {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  height: 500px;
+  height: 600px;
   margin-bottom: 25%;
   border: 4px solid #282933;
   border-right: none;
   border-radius: 10px;
+  position: relative;
+}
+
+#docsBlur {
+  position: absolute;
+  top: 1200px;
+  left: 1050px;
+  background-color: var(--active);
+  width: 400px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(100px);
+  opacity: 0.1;
 }
 
 .docs-title {
@@ -877,7 +893,26 @@ footer h5 {
 
 .docs right-content div {
   height: 100vh;
-  margin-left: 30px;
+  margin-left: 50px;
+}
+
+.docs right-content a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--active);
+}
+
+.docs right-content p {
+  max-width: 650px;
+  text-align: justify;
+}
+
+.docs right-content p span {
+  background-color: #282933;
+  padding: 1px 4px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: var(--green);
 }
 
 .docs-com {
