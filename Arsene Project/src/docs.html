@@ -86,8 +86,8 @@
                         <img src="../img/Logotext Arsene.png" alt="logotext" height="auto" width="100px">
                     </div>
                     <ul>
-                        <li style="opacity: 1;" id="nav-anim">Animation</li>
-                        <li style="opacity: 0.3;" id="nav-lib">Libraries</li>
+                        <li style="opacity: 1;" id="nav-lib">Libraries</li>
+                        <li style="opacity: 0.3;" id="nav-anim">Animation</li>
                         <li style="opacity: 0.3;" id="nav-misc">Miscellaneous</li>
                     </ul>
                 </left-content>
@@ -101,11 +101,76 @@
                     background-color: #282933;
                     position: sticky;
                     top: 0;
+                    z-index: 10;
                     ">
-                        <!-- <img src="../img/Logotext Arsene.png" alt="logotext" height="auto" width="100px"> -->
                     </browser-ui>
+
+
                     <div id="content-1">
-                        <h2><span style="color: #3067e7;">></span> Typing Animation</h2>
+
+                        <h2><span style="color: #3067e7;">></span> Libraries</h2>
+
+                        <h3>AnimeJS</h3>
+                        <a href="https://animejs.com">
+                            <img src="../img/DocsLib1.png" alt="AnimeJS Image">
+                        </a>
+                        <p>Firstly, we have leveraged the power of AnimeJS, brought to us by the 
+                            talented Julian Garnier. AnimeJS is a remarkable animation library that 
+                            adds a new dimension of movement and visual appeal to our website. 
+                            With its simple syntax and powerful capabilities, AnimeJS allows us to 
+                            bring our content to life through fluid animations, captivating transitions, 
+                            and delightful user experiences.</p>
+                        <h3>CDN</h3>
+                        <p><span style="
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #3067e7;
+                        ">&ltscript<span></span>src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"&gt&lt/script&gt</span></p>
+
+                        <br><br>
+
+                        <h3>TypedJS</h3>
+                        <a href="https://mattboldt.github.io/typed.js">
+                            <img src="../img/DocsLib2.png" alt="TypedJS Image">
+                        </a>
+                        <p>Next, we have integrated Typed.JS, created by the skilled developer Matt Boldt. 
+                            Typed.JS brings a dynamic twist to our website's text elements. With 
+                            this library, we can easily create engaging and eye-catching typing 
+                            animations, mimicking the experience of a typewriter. This adds an 
+                            element of intrigue and professionalism to our content, making it 
+                            stand out in the minds of our users.</p>
+                        <h3>CDN</h3>
+                        <p><span style="
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #3067e7;
+                        ">&ltscript<span></span>src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"&gt&lt/script&gt</span></p>
+
+                        <br><br>
+
+                        <h3>HighlightJS</h3>
+                        <a href="https://highlightjs.org">
+                            <img src="../img/DocsLib3.png" alt="HighlightJS Image">
+                        </a>
+                        <p>Lastly, we've incorporated the brilliance of Highlight.JS, developed 
+                            by Josh Goebel. This library is a boon for showcasing code snippets
+                             and technical content on our website. With Highlight.JS, our code 
+                            blocks become more readable and comprehensible, thanks to its 
+                            syntax highlighting capabilities. Whether it's HTML, CSS, JavaScript, 
+                            or other programming languages, Highlight.JS ensures that our code 
+                            examples are visually appealing and easy to follow.</p>
+                        <h3>CDN</h3>
+                        <p style="max-width: 800px;"><span style="
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #3067e7;
+                        ">&ltscript<span></span>src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"&gt&lt/script&gt</span></p>
+                        <br><br>
+                    </div>
+
+
+                    <div id="content-2">
+                    <h2><span style="color: #3067e7;">></span> Typing Animation</h2>
                         <p>Used to create a dynamic and immersive text animation in our landing page.</p>
 <pre class="pre">
     <code class="language-js"
@@ -167,7 +232,7 @@
                         <p>As usual, you can learn more by visiting <a href="https://animejs.com/documentation/">Anime.JS</a> documentation.</p>
                         <br><br>
                         <h2><span style="color: #3067e7;">></span> Stagger Animation</h2>
-                        <p>What's a stagger? basically a multi-animated child element in the same parent. You can see the examples of our stagger animations <a href="#docs-landing">here.</a></p>
+                        <p>What's a stagger? basically a multi-animated child element in the same parent. You can see the examples of our stagger animations <a href="#docs-landing">up here.</a></p>
 <pre class="pre">
     <code class="language-js"
     style="
@@ -189,22 +254,14 @@
     })
     </code>
 </pre>
-                        <p><span>.badge</span> is a parent class, <span>.labelStagger</span> are the children.</p>
+                        <p><span>.badge</span> is a parent class, and <span>.labelStagger</span> are the children. You can use the stagger <span style="color: #6DAEEC;"><span style="color: white;">anime.</span>stagger()</span> function to make the child animate 1 by 1 on the specified delay. More about staggering <a href="https://animejs.com/documentation/#staggeringBasics">here</a></p>
 
                         <br><br>
                     </div>
 
-
-
-                    <div id="content-2" style="display: none;">
-                        <h2><span style="color: #3067e7;">></span> Libraries</h2>
-                        <p>That makes Arsene stands out.</p>
-                    </div>
-
-
-
-                    <div id="content-3" style="display: none;">
-                        <h2><span style="color: #3067e7;">></span> Color & Highlight</h2>
+                    
+                    <div id="content-3">
+                        <h2><span style="color: #3067e7;">></span> Colors</h2>
                         <p>Our color palette were designed to reflect the essence of technological 
                             advancement.</p>
 <!-- php used for neutral highlight -->
@@ -228,6 +285,36 @@
       }
     </code>
 </pre>
+                        <p>Use <span style="color: white;">:root</span> element to make the styling progress easier. Or you can do inline styling just like this paragraph are, whatever. You can use <a href="https://realtimecolors.com/?colors=000000-ffffff-8fb3ff-ebf1ff-d41d6d">Realtime Colors</a> for your pallete needs.</p>
+                        <br><br>
+                        <h2><span style="color: #3067e7;">></span> Highlights</h2>
+
+<pre class="pre">
+    <code class="language-js"
+    style="
+    border: none;
+    border-left: 6px solid #3067e7;
+    border-radius: 10px;
+    width: 460px;
+    overflow: hidden;
+    ">
+    // This Highlighted text made by Highlight.JS with a little spices.
+
+    // You can use it by importing the library CDN then use
+
+    hljs.highlightAll()
+
+    // To start.
+    </code>
+</pre>
+                        <p>You can find the CDN of Highlight.JS on our <span style="color: #3067e7;">Libraries</span> section.</p>
+                        <br><br>
+                        <h2><span style="color: #3067e7;">></span> Typography</h2>
+                        <p>We used <span style="color: #3067e7;">Poppins</span> as the main typeface (font) of this website, you can easily import the font to your CSS on <a href="https://fonts.google.com/specimen/Poppins?query=Poppins">Google Font.</a></p>
+                        <br><br>
+                    </div>
+
+
                 </right-content>
             </section>
             <div id="docsBlur"></div>
@@ -240,8 +327,8 @@
                         Every Interaction Sparks Innovation and Empowerment.</p>
                 </main-content>
                 <button-content>
-                    <button id="buttonMail">projectarsene@gmail.com</button>
-                    <button id="buttonDiscord">Discord</button>
+                    <a href="mailto: projectarsene@gmail.com?subject=Contact Dev"><button id="buttonMail">projectarsene@gmail.com</button></a>
+                    <a href="https://discord.gg/VAsJtrWEA8"><button id="buttonDiscord">Discord</button></a>
                 </button-content>
             </section>
         </main>
@@ -279,8 +366,8 @@ const navLib = document.getElementById('nav-lib')
 const navMisc = document.getElementById('nav-misc')
 
 // div content
-const contentAnim = document.getElementById('content-1')
-const contentLib = document.getElementById('content-2')
+const contentLib = document.getElementById('content-1')
+const contentAnim = document.getElementById('content-2')
 const contentMisc = document.getElementById('content-3')
 
 // event handlers

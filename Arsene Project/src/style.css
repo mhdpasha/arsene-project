@@ -4,8 +4,10 @@
   --background: #141725;
   --primary: #1445b7;
   --active: #3067e7;
+
   --brown: #CD9A69;
   --green: #99C26E;
+
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -70,6 +72,10 @@ code {
   border-top-left-radius: 0px;
 }
 
+main {
+  position: relative;
+}
+
 
 /* HEADER STYLING START */
 /* Navbar margin set */
@@ -113,7 +119,7 @@ button {
 
 .navList li a {
   letter-spacing: 3.5px;
-  padding: 0 30px;
+  padding: 30px 30px;
   transition: 0.2s ease;
 }
 
@@ -896,6 +902,16 @@ footer h5 {
   margin-left: 50px;
 }
 
+.docs right-content img {
+  width: auto;
+  height: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+.docs right-content img:hover {
+  filter: brightness(1.3);
+}
+
 .docs right-content a {
   text-decoration: underline;
   font-weight: bold;
@@ -913,6 +929,10 @@ footer h5 {
   font-weight: 600;
   border-radius: 5px;
   color: var(--green);
+}
+
+.docs right-content #content-2, #content-3 {
+  display: none;
 }
 
 .docs-com {
