@@ -91,7 +91,7 @@
                         <li style="opacity: 0.3;" id="nav-misc">Miscellaneous</li>
                     </ul>
                 </left-content>
-                <right-content>
+                <right-content id="rightContent">
                     <browser-ui style="
                     display: flex;
                     justify-content: center;
@@ -108,7 +108,7 @@
 
                     <div id="content-1">
 
-                        <h2><span style="color: #3067e7;">></span> Libraries</h2>
+                        <h2 id="resetLib"><span style="color: #3067e7;">></span> Libraries</h2>
 
                         <h3>AnimeJS</h3>
                         <a href="https://animejs.com">
@@ -369,12 +369,15 @@ const navMisc = document.getElementById('nav-misc')
 const contentLib = document.getElementById('content-1')
 const contentAnim = document.getElementById('content-2')
 const contentMisc = document.getElementById('content-3')
+const resetScroll = document.getElementById('rightContent')
 
 // event handlers
 navAnim.onclick = () => {
     navAnim.style.opacity = 1
     navLib.style.opacity = 0.3
     navMisc.style.opacity = 0.3
+
+    resetScroll.scrollTop = 0
 
     contentAnim.style.display = 'block'
     contentLib.style.display = 'none'
@@ -385,6 +388,8 @@ navLib.onclick = () => {
     navLib.style.opacity = 1
     navMisc.style.opacity = 0.3
 
+    resetScroll.scrollTop = 0
+
     contentAnim.style.display = 'none'
     contentLib.style.display = 'block'
     contentMisc.style.display = 'none'
@@ -393,6 +398,8 @@ navMisc.onclick = () => {
     navAnim.style.opacity = 0.3
     navLib.style.opacity = 0.3
     navMisc.style.opacity = 1
+
+    resetScroll.scrollTop = 0
 
     contentAnim.style.display = 'none'
     contentLib.style.display = 'none'
