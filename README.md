@@ -12,8 +12,7 @@ In this project, we use : <br>
 • Highlight.JS by @joshgoebel - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js
 
 ## Creator
-This project was coded by me (Muhamad Pasha Abara) as a Frontend Developer,
-with design that created by Nickymicko Ayub as an UI/UX Designer.
+This project was coded in collaboration with Nickymicko Ayub and Me as a Frontend
 
 Feel free to learn this website technology, this website was built for that.
 Happy coding!!
