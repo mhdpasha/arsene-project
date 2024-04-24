@@ -888,6 +888,7 @@ footer h5 {
 
 #nav-anim:hover, #nav-lib:hover, #nav-misc:hover {
   color: var(--active);
+  filter: brightness(2);
 }
 
 #nav-lib, #nav-anim, #nav-misc{
@@ -998,7 +999,75 @@ footer h5 {
 
 .docs-com #buttonMail:hover, #buttonDiscord:hover {
   padding: 0 100px;
+  filter: brightness(1.2);
 }
+
+/* Products */
+
+.plan {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20%;
+}
+
+.plan .card {
+  border: 0.5px solid white;
+  border-radius: 10px;
+  aspect-ratio: 2/3;
+  width: 350px;
+  padding: 20px;
+  box-sizing: border-box ;
+  color: white;
+}
+
+.plan .card h1{
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.plan .card p{
+  font-size: 14px;
+  margin: 0;
+}
+
+.plan ul {
+  list-style-type: square;
+}
+
+.plan button {
+  background-color: var(--primary);
+  padding: 10px 100px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.plan button:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+.timeline iframe {
+  border-radius: 20px;
+}
+
+/* .timeline .line {
+  border: 1px solid white;
+  max-height: 500px;
+} */
+
 
 
 @media screen and (max-width: 1200px) {

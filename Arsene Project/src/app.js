@@ -31,27 +31,6 @@ hljs.highlightAll() // initHighlightingOnLoad()
     const jsText = document.getElementById("text-js")
     js.onmouseover = () => jsText.innerHTML = "JS Libraries"
     js.onmouseleave = () => jsText.innerHTML = "JavaScript"
-    
-
-
-    // docs
-    // let btn1 = document.getElementById("btn-1")
-    // let btn2 = document.getElementById("btn-2")
-    // let btn3 = document.getElementById("btn-3")
-
-
-    // let content1 = document.getElementById("content-1")
-    // let content2 = document.getElementById("content-2")
-
-    // btn1.addEventListener("click", () => {
-    //     content1.style.display = 'block'
-    //     content2.style.display = 'none'
-    // })
-    // btn2.addEventListener("click", () => {
-    //     content1.style.display = 'none'
-    //     content2.style.display = 'block'
-    // })
-    
 
 
     const scrollPage = () => {
@@ -92,13 +71,13 @@ hljs.highlightAll() // initHighlightingOnLoad()
         loop: true
     })
     const svgLeft = anime({
-        targets: '#svg-left',
-        translateX: [0, 180, 0],
-        duration: 2000,
-        autoplay: true,
-        easing: 'easeInOutElastic',
-        delay: 600,
-        loop: true
+            targets: '#svg-left',
+            translateX: [0, 180, 0],
+            duration: 2000,
+            autoplay: true,
+            easing: 'easeInOutElastic',
+            delay: 600,
+            loop: true
     })
     const svgRight = anime({
         targets: '#svg-right',
@@ -169,16 +148,3 @@ hljs.highlightAll() // initHighlightingOnLoad()
         autoplay: false,
         loop: false,
     })
-
-    // let path = anime.path('#logoLine path');
-    // let pathAnimation = anime({
-    //     targets: '#pathPointer',
-    //     translateX: path('x'),
-    //     translateY: path('y'),
-    //     // rotate: path('angle'),
-    //     easing: 'linear',
-    //     duration: 8000,
-    //     loop: true,
-    //     autoplay: true
-    // })
-    
